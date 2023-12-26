@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <style>
+        body{
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    </style>
+    <title>Assignment 2 | Bootstrap</title>
+</head>
+
+<body>
+    <div class="container-fluid row align-items-center">
+        <div class="col-1 d-flex justify-content-center">
+            <img src="./assets/logo.png" alt="logo" class="img-fluid" />
+        </div>
+        <div class="col-7">
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                      <li class="nav-item  rounded mx-3">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <li class="nav-item  rounded mx-3">
+                        <a class="nav-link" href="#">About Us</a>
+                      </li>
+                      <li class="nav-item  rounded mx-3">
+                        <a class="nav-link" href="#">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+            <input placeholder="Search" class="rounded"/>
+        </div>
+    </div>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <img src="assets\b1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets\b2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets\b3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container-fluid jumbotron mb-5">
+        <h1 class="display-4 text-center fw-bold">Welcome!</h1>
+        <!-- <hr class="my-4 border-5 border-danger"> -->
+        <p>Cities come to life with the rhythmic pulse of human endeavors, streets bustling with diverse narratives. In
+            the tranquil spaces, echoes of laughter and shared stories resonate, knitting the fabric of connections.
+            Every corner, whether bathed in the glow of city lights or nestled in the serenity of nature, harbors tales
+            of joy, challenges, and the ever-constant pursuit of dreams. Together, these threads compose the intricate
+            mosaic of experiences that shape our collective journey through the beautiful, unpredictable tapestry of
+            life.
+
+        </p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg ml-5" href="#" role="button">Learn more</a>
+        </p>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-4">
+            <div class="card" style="max-width:400px">
+                <img class="card-img-top m-auto mt-2" src="./assets/n1.jpeg" alt="Card image" style="width:50%">
+                <div class="card-body">
+                    <h4 class="card-title">Aristotle</h4>
+                    <p class="card-text"> Aristotle is an architect and engineer from Greece.</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="max-width:400px">
+                <img class="card-img-top m-auto mt-2" src="./assets/n2.webp" alt="Card image" style="width:50%">
+                <div class="card-body">
+                    <h4 class="card-title">Nipolian</h4>
+                    <p class="card-text">Nipolian is a King of France</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="max-width:400px">
+                <img class="card-img-top m-auto mt-2" src="./assets/n3.jpeg" alt="Card image" style="width:50%; height: 110px">
+                <div class="card-body">
+                    <h4 class="card-title">Alpacheno</h4>
+                    <p class="card-text">Alpacheno is a Character of Godfather</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="d-flex align-items-center mb-2">
+                <span>Python</span>
+                <div class="progress-bar bg-dark rounded" style="width:100%">100%</div>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+                <span>BeautifulSoup</span>
+                <div class="progress-bar bg-primary rounded" style="width:70%">70%</div>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+                <span>Pandas</span>
+                <div class="progress-bar bg-danger rounded" style="width:50%">50%</div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-6">
+                    <h3>A</h3>
+                    <span class="badge rounded-pill bg-primary">Dark</span>
+                </div>
+                <div class="col-6">
+                    <h3>A</h3>
+                    <span class="badge rounded-pill bg-primary">Dark</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h3>A</h3>
+                    <span class="badge rounded-pill bg-primary">Dark</span>
+                </div>
+                <div class="col-6">
+                    <h3>A</h3>
+                    <span class="badge rounded-pill bg-primary">Dark</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div><br>
+
+  
+
+    <footer class="container-fluid row bg-dark p-3">
+        <div class="col-3">
+            <h1 class="text-white">Contact</h1>
+            <p class="text-white">info@gmail.com</p>
+            <p class="text-white">+92584755888</p>
+
+        </div>
+        <div class="col-6">
+            <nav class="navbar navbar-expand-sm justify-content-center col-7">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#home">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#about">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-3 d-flex justify-content-sm-between align-items-center">
+            <img style="max-width: 25px; height: 25px;" src="./assets/fb_icon.gif" />
+            <img style="max-width: 25px; height: 25px;" src="./assets/google_icon.gif" />
+            <img style="max-width: 25px; height: 25px;" src="./assets/linked_icon.gif" />
+            <img style="max-width: 25px; height: 25px;" src="./assets/twitter_icon.gif" />
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
